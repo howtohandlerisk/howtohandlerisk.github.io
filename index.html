@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>How to Handle Risk </title>
+    <title>@yield('title', config('app.name'))</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
     <style>
 
@@ -48,16 +49,29 @@
 </head>
 <body>
     <div class="container-fluid">
+        <nav class="links">
+            <a href="/login" style="margin-right: 15px;">
+                <button>
+                    {{__('Login')}}
+                </button>
+            </a>
+
+            <a href="/register">
+                <button>
+                    {{__('Register')}}
+                </button>
+            </a>
+        </nav>
         <div class="container-fluid text-center">
           <h1>How do YOU handle risk?</h1>
-            <h1><img src="/img/howhandle.png"></h1></div>
+            <h1><img src="/img/howhandle.png" height="624" width="1185"></h1></div>
           <div class="col"> </div>
         </div>
         <div class="container-fluid text-center" style="background-color: #1c2d49;padding-top:50px;padding-bottom:50px">
-            <h1><img src="/img/typical_list.png"></h1>
+            <h1><img src="/img/typical_list.png" height="272" width="535"></h1>
         </div>
         <div class="container-fluid text-center" style="background-color: #000;padding-top:50px;padding-bottom:10px">
-            <h1><img src="/img/simple_tool.png"></h1>
+            <h1><img src="/img/simple_tool.png" height="195" width="751"></h1>
         </div>
         <div class="container-fluid text-center" style="background-color: #000;padding-top:10px;padding-bottom:50px">
             <h1><img src="/img/process.png" height="388" width="400"></h1>
@@ -68,11 +82,11 @@
             <h1 class="white">Risk Management made easy</h1>
           </div>
         </div>
-        <div class="row" style="background-color: #1c2d49;padding-top:20px">
+        <div class="row" style="background-color: #1c2d49;padding-top:30px">
             <div class="col"> </div>
-            <div class="col-5"><h1><img src="/img/book.png"></h1></div>
+            <div class="col-5"><h1><img src="/img/book.png" height="338" width="360"></h1></div>
             <div class="col"> </div>
-            <div class="col-5"><h1><img src="/img/scorecard.png"></h1></div>
+            <div class="col-5"><h1><img src="/img/scorecard.png" height="306" width="350"></h1></div>
         </div>
         <div class="row" style="background-color: #1c2d49;padding-top:20px">
             <div class="col"> </div>
@@ -92,13 +106,13 @@
                 Available at the following retailers:
                 <br> <a target="_blank" href="https://www.xlibris.com/Bookstore/BookDetail.aspx?BookId=SKU-001136636">xLibris</a>
                 <br> <a target="_blank" href="https://www.amazon.com/How-Handle-Risk-George-Robson/dp/1543417396">Amazon</a>
-                <br> <a target="_blank" href="https://www.barnesandnoble.com/w/how-to-handle-risk-george-d-robson/1126621013">Barnes-n-Noble - Online and in stores</a>
+                <br> <a target="_blank" href="https://www.barnesandnoble.com/w/how-to-handle-risk-george-d-robson/1126621013">Barnes & Noble (online and in stores)</a>
                 <br> <a target="_blank" href="https://play.google.com/store/books/details?id=F0w7DwAAQBAJ">Google Play</a>
               </span>
             </div>
             <div class="col"> </div>
             <div class="col-5">
-              <span class="white">The Risk Management webtool takes you thru the process step by step:
+              <span class="white">The Risk Management webtool walks you thru the process step by step:
                   <ol style="text-align: left;">
                       <li>Identify issues </li>
                       <li>Analyze and rank them objectively,<br>minimizing unproductive, subjective arguments</li>
@@ -108,22 +122,55 @@
                 </span>
                 <br>
                 <span class="white">
-                  Unlimited projects, unlimited users, one low monthly fee <br>(sign up for a year, buy 10 months and get 2 months free)
+                  Unlimited projects, unlimited users, one low monthly fee<br> &nbsp; - Sign up for a year, pay for 10 months and get 2 months free!
                   <br><br>
-                  Always in sync: No matter where you are, no matter what device, your project and your team is always in sync.
+                  Always in sync: <br>No matter where you are, no matter what device,<br>your project and your team are always in sync.
                   <br><br>
-                  <button type="button" style="padding: 15px 32px;
+                  <button type="button" style="padding: 12px 25px;
                   text-align: center;
                   text-decoration: none;
                   display: inline-block;
-                  font-size: 36px">Sign Up Soon</button>
+                  font-size: 30px">Sign Up Soon</button>
 
               </span>
             </div>
         </div>
 
-        <div class="container-fluid text-center white" style="background-color: #000;padding-top:50px;padding-bottom:50px">
+
+        <div class="row text-center" style="background-color: #000;padding-top:50px">
+          <div class="col">
+            <h1 class="white">Introduction to Risk Management</h1>
+          </div>
+        </div>
+        <div class="row" style="background-color: #000;padding-top:20px;padding-bottom:50px">
+            <div class="col"> </div>
+            <div class="col-6">
+                <span class="white">If you are searching for an answer to simplify your personal and/or business life, you've come to the right place.If you want to reduce risk, stress and worry in you daily life, you've really come to the right place.
+                  <br><br>
+                  You've read this far, so why not invest a few more minutes to explore this simple, proven answer to your needs.  Please open the intro on the right <i class="fa fa-arrow-right"></i>
+                  <br><br><br><br>
+                  Sign up and find a proven process to apply this unique form of risk management to your projects or personal issues. The web tool is specifically designed to record, track and help you manage successful implementation.
+                  <br><br>
+                  <center>
+                      <button type="button" style="padding: 12px 25px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 30px">Sign Up
+                      </button>
+                  </center>
+                  <br><br>
+                  If you would like professional training for your team, consulting on your first implementation, or any other assistance, please contact us at <a href="mailto:consulting@howtohandlerisk.com">consulting@howtohandlerisk.com</a>
+                </span>
+            </div>
+            <div class="col"> </div>
+            <div class="col-4"><h1><a href="/docs/Introduction_to_Risk_Management.pdf"><img src="/img/intro.png" height="305" width="406"></a></h1></div>
+        </div>
+
+
+        <div class="container-fluid text-center white" style="background-color: #1c2d49;padding-top:50px;padding-bottom:50px">
           <h1>What we want to hear our users say:</h1>
+          <br>
           <p>
             This is exactly how I've always wanted to manage my projects.<BR><i>Jason M.</i>
           </p>
@@ -134,7 +181,6 @@
             I'm less stressed and more productive...I've become a star at work!<BR><i>Candace B.</i>
           </p>
         </div>
-
 
     </div>
 </body>
